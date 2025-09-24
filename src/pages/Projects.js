@@ -1,19 +1,46 @@
-export default function Projects() {
+import React from "react";
+import "../App.css";
+
+function Projects() {
   return (
-    <div style={{ padding: "2rem" }}>
-      <h1>Projects</h1>
-      <div>
-        <h3>Portfolio Website</h3>
-        <p>A personal portfolio built with React and styled components.</p>
+    <div className="projects-page">
+      <h1>My Projects</h1>
 
-        <h3>Student book Management System</h3>
-        <p>A simple app for managing student using react, javascript</p>
+      <div className="projects-container">
+        <div className="project-box">
+          <p>
+            <strong>Project 1:</strong></p>
+             <p>Portfolio Website - A personal portfolio built with React
+            showcasing my skills, projects, and experience.
+          </p>
+        </div>
 
-        <h3>A Website(Shamba Grains Limited) </h3>
-        <p>For a client, it is a website for an agro processing company using React,css, bootstrap and Node js.
-            and python (Flask) for backend.
-        </p>
+        <div className="project-box">
+          <p>
+            <strong>Project 2:</strong> </p>
+            <p>Task Manager App - A web application to manage daily
+            tasks and deadlines using React and Firebase.
+          </p>
+        </div>
+
+        <div className="project-box">
+          <p>
+           <strong> Project 3:</strong></p>
+           <p> Weather App - A small app that fetches weather data from
+            an API and displays it dynamically based on user location.
+          </p>
+        </div>
+
+        <div className="project-box">
+          <p>
+           <strong>Project 4:</strong></p> 
+           <p>Blog Platform - A simple blog where users can read and
+            post articles, built with React and Node.js.
+          </p>
+        </div>
       </div>
     </div>
   );
 }
+
+export default Projects;

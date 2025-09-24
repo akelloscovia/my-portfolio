@@ -1,23 +1,36 @@
 /* Reset */
 * {
-  margin: 0;
-  padding: 0;
+  margin: 50;
+  padding: 50;
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Body */
 body {
-  background-color: #fdfdfd;
-  color: #333;
-  line-height: 1.6;
+  background-image: url("./images/nasa-Q1p7bh3SHj8-unsplash.jpg"); /* if stored in public/ */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(11, 51, 51);
 }
+.home-container {
+  background-color:yellow;   /* yellow background */
+  width: 40%;                 /* take 40% of the page width */
+  padding: 20px;              /* add spacing inside */
+  margin: 20px;               /* spacing around */
+  text-align: left;           /* keep text left-aligned */
+  border-radius: 8px;         /* smooth corners */
+  float: right;                /* push it to the left side */
+}
+
+
 
 /* Header / Navbar */
 header {
   background-color: #006400; /* Dark green */
   color: white;
-  padding: 1rem 2rem;
+  padding: 2rem 6rem;
 }
 
 header nav {
@@ -29,7 +42,7 @@ header nav {
 header nav a {
   color: white;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   transition: color 0.3s ease;
 }
 
@@ -41,19 +54,152 @@ header nav a:hover {
 footer {
   background-color: #006400;
   color: white;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
+  text-align:center;
+  padding: 2rem;
 }
 
 /* Main Content */
 main {
-  padding: 2rem;
-  max-width: 900px;
-  margin: auto;
+ padding-bottom: 10px;
+}
+/* Footer stays at bottom */
+footer {
+  background-color: #006400;  /* dark green */
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0px;
+  width: 100%;
 }
 
 h1, h2, h3 {
   margin-bottom: 1rem;
   color: #006400; /* green accent */
 }
+/* Projects page container */
+.projects-page {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 20px;
+}
+
+/* Container for horizontal movement */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;          /* wrap to next line on small screens */
+  gap: 20px;                /* space between boxes */
+  justify-content: flex-start; /* start from left, move right */
+}
+
+/* Each project box */
+.project-box {
+  background-color: #FFD700; /* yellow */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  flex: 1 1 250px;           /* flex-grow, flex-shrink, base width */
+  min-width: 250px;          /* ensures box doesn’t shrink too small */
+  max-width: 300px; 
+  min-height:230px;         /* optional max width */
+}
+
+.project-box p {
+  margin: 0;
+  color: #333; /* dark text for readability */
+}
+
+/* Centered container for the page */
+.center-page {
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+  height: 100vh;           /* full viewport height */
+  background-color:transparent; /* optional background color */
+}
+
+/* Yellow box for contact info */
+.yellow-box {
+  background-color: #FFD700; /* yellow */
+  padding: 40px;
+  border-radius: 1px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  max-width: 800px;
+  min-height: calc(100vh - 100px);
+
+}
+
+/* Links inside the yellow box */
+.yellow-box a {
+  color: #006400; /* dark green links */
+  text-decoration: none;
+}
+
+.yellow-box a:hover {
+  color: #ffffff; /* white on hover */
+  text-decoration: underline;
+}
+
+/* Centered container for pages (Contact, Skills, etc.) */
+.center-page {
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+  min-height: calc(100vh - 100px); /* leave space for footer */
+  padding-bottom: 100px;   /* optional, same as footer height */
+  background-color: transparent; /* optional background */
+}
+
+/* Yellow box for content */
+.yellow-box {
+  background-color: #FFD700; /* yellow */
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+  max-width: 600px;
+}
+
+/* Links inside yellow box (optional) */
+.yellow-box a {
+  color: #006400; /* dark green links */
+  text-decoration: none;
+}
+
+.yellow-box a:hover {
+  color: #ffffff; /* white on hover */
+  text-decoration: underline;
+}
+/* Centered container for pages (About, Contact, Skills, etc.) */
+.center-page {
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+  min-height: calc(100vh - 100px); /* leave space for footer */
+  padding-bottom: 100px;   /* optional, same as footer height */
+  background-color:transparent; /* optional background */
+}
+
+/* Yellow box for content */
+.yellow-box {
+  background-color: #FFD700; /* yellow */
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+  max-width: 600px;
+}
+
+/* Links inside yellow box (optional) */
+.yellow-box a {
+  color: #006400; /* dark green links */
+  text-decoration: none;
+}
+
+.yellow-box a:hover {
+  color: #ffffff; /* white on hover */
+  text-decoration: underline;
+}
+

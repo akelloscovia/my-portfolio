@@ -1,6 +1,7 @@
-import "../App.css";
+import React from "react";
+import "../App.css"; // make sure this path is correct
 
-export default function Home() {
+function Home() {
   return (
     <div className="home-container">
       <h1>Welcome to My Portfolio</h1>
@@ -16,3 +17,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default Home;
