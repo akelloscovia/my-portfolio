@@ -1,0 +1,6 @@
+Flask
+pandas
+openpyxl
+Flask-Bcrypt
+Flask-Migrate
+Flask-SQLAlchemy
